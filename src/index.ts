@@ -1,7 +1,7 @@
 // cronicle-plugin-barco-pulse
-// index.js
+// index.ts
 
-// Dependancies
+// Dependencies
 import * as net from 'net';
 
 const client = new net.Socket();
@@ -52,11 +52,11 @@ process.stdin.on('data', (res) => {
 	console.log('Starting Plugin');
 
 	try {
-		//ip = data['params']['ip'];
-		//command = data['params']['command'];
+		ip = data['params']['ip'];
+		command = data['params']['command'];
 
-		ip = '192.168.11.36'
-		command = 'Power Off'
+		//ip = '192.168.11.36'
+		//command = 'Power Off'
 
 		let commandUrl;
 
